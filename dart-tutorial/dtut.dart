@@ -1,3 +1,4 @@
+import 'dart:collection';
 import 'dart:math';
 
 void main() {
@@ -41,4 +42,27 @@ void main() {
 
   var index = list4.indexOf(1);
   print(index);
+
+  Map<String, int> characterValue = HashMap(); // Is a HashMap
+  characterValue.putIfAbsent("a", () => 1);
+  characterValue.putIfAbsent("b", () => 3);
+  characterValue.putIfAbsent("c", () => 3);
+  characterValue.putIfAbsent("d", () => 2);
+  characterValue.putIfAbsent("e", () => 1);
+
+  // A to T
+  // for (var i = 0; i < 10; i++) {
+  //   characterValue.putIfAbsent(String.fromCharCode(i + 97), () => 1);
+  //   print(
+  //       "${String.fromCharCode(i + 97)}, ${characterValue[String.fromCharCode(i + 97)]}");
+  // }
+
+  // // T to G
+  // for (var i = 10; i < 12; i++) {
+  //   characterValue.putIfAbsent(String.fromCharCode(i + 97), () => 2);
+  //   print(
+  //       "${String.fromCharCode(i + 97)}, ${characterValue[String.fromCharCode(i + 97)]}");
+  // }
+
+  print(characterValue);
 }
