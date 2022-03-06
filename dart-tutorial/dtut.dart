@@ -67,4 +67,9 @@ void main() {
   print(characterValue);
 
   print(pow(5, 3));
+
+  var length = 10;
+
+  var sequence = List.generate(length, (i) => i + 1);
+  print(sequence);
 }
