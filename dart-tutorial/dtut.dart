@@ -65,4 +65,6 @@ void main() {
   // }
 
   print(characterValue);
+
+  print(pow(5, 3));
 }

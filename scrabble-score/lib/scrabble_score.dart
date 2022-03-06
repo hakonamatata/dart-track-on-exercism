@@ -4,13 +4,13 @@ int score(String s) {
   Map<String, int> characterValue = HashMap();
   characterValue.addEntries([
     MapEntry('a', 1),
-    MapEntry('b', 1),
-    MapEntry('c', 1),
-    MapEntry('d', 1),
+    MapEntry('b', 3),
+    MapEntry('c', 3),
+    MapEntry('d', 2),
     MapEntry('f', 4),
     MapEntry('e', 1),
     MapEntry('g', 2),
-    MapEntry('h', 2),
+    MapEntry('h', 4),
     MapEntry('i', 1),
     MapEntry('j', 8),
     MapEntry('k', 5),
