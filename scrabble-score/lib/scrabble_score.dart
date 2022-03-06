@@ -1,9 +1,7 @@
-// Put your code here
-
 import 'dart:collection';
 
 int score(String s) {
-  Map<String, int> characterValue = HashMap(); // Is a HashMap
+  Map<String, int> characterValue = HashMap();
   characterValue.addEntries([
     MapEntry('a', 1),
     MapEntry('b', 1),
