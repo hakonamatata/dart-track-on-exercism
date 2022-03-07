@@ -72,4 +72,11 @@ void main() {
 
   var sequence = List.generate(length, (i) => i + 1);
   print(sequence);
+
+  var string = "one,\ntwo,\nthree";
+
+  RegExp exp = RegExp(r"[^a-z, ]");
+  var split = string.toLowerCase().replaceAll(exp, '').replaceAll(' ', ',').split(",");
+
+  print(split);
 }
