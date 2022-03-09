@@ -21,7 +21,7 @@ class WordCount {
 
   String parseWord(String word) {
     // remove ' from start of word
-    if (word.length > 2 && word.substring(0, 1) == '\'') {
+    if (word.length > 1 && word.substring(0, 1) == '\'') {
       word = word.substring(1);
     }
 
