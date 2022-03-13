@@ -14,34 +14,20 @@ class Anagram {
         continue;
       }
 
-      Map<String, int> usedCharacters = HashMap(); // Is a HashMap
+      Map<String, int> usedCharacters = HashMap();
       for (var i = 0; i < s.length; i++) {
         var currentChar = s[i].toLowerCase();
-        if (usedCharacters.containsKey(currentChar)) {
-          var count = usedCharacters[currentChar] ?? 1; // pointless nullcheck, will never be null
-          usedCharacters[currentChar] = count + 1;
-        } else {
-          usedCharacters[currentChar] = 1;
-        }
+        usedCharacters.update(currentChar, (value) => value + 1, ifAbsent: () => 1);
       }
 
-      var isAnagram = true;
       for (var j = 0; j < s.length; j++) {
         var currentChar = list[i][j].toLowerCase();
-
-        if (usedCharacters.containsKey(currentChar)) {
-          var count = usedCharacters[currentChar] ?? 1; // pointless nullcheck, will never be null
-          usedCharacters[currentChar] = count - 1;
-        } else {
-          usedCharacters[currentChar] = -1;
-          isAnagram = false;
-          break;
-        }
+        usedCharacters.update(currentChar, (value) => value - 1, ifAbsent: () => -1);
       }
 
       // each char in usedCharacters should be 0, if not, all letters are not used exactly once and
       // therefore it is not a real anagram
-      if (isAnagram && usedCharacters.values.every((v) => v == 0)) {
+      if (usedCharacters.values.every((v) => v == 0)) {
         result.add(list[i]);
       }
     }
