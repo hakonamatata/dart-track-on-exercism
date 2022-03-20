@@ -60,11 +60,15 @@ class SampleItemListView extends StatelessWidget {
                 // background, the navigation stack is restored.
                 Navigator.restorablePushNamed(
                   context,
-                  SampleItemDetailsView.routeName,
+                  designExampleRouteName(item.id),
                 );
               });
         },
       ),
     );
+  }
+
+  String designExampleRouteName(int id) {
+    return '/example/$id';
   }
 }
