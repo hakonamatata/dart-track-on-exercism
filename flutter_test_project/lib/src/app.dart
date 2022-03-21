@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_test_project/src/design_examples/design1.dart';
 
-import 'design_examples/design2.dart';
-import 'design_examples/design3.dart';
-import 'sample_feature/sample_item_details_view.dart';
+import 'pages/design1.dart';
+import 'pages/design2.dart';
+import 'pages/design3.dart';
 import 'sample_feature/sample_item_list_view.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
@@ -79,7 +78,10 @@ class MyApp extends StatelessWidget {
                     return const DesignExample2();
                   case '/example/3':
                     return const DesignExample3();
+                  // case '/example/4':
+                  // return const DesignExample4();
                   // case SampleItemListView.routeName:
+
                   default:
                     return const SampleItemListView();
                 }

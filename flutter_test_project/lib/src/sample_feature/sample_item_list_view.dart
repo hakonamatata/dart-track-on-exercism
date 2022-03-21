@@ -8,7 +8,7 @@ import 'sample_item_details_view.dart';
 class SampleItemListView extends StatelessWidget {
   const SampleItemListView({
     Key? key,
-    this.items = const [SampleItem(1), SampleItem(2), SampleItem(3)],
+    this.items = const [SampleItem(1), SampleItem(2), SampleItem(3), SampleItem(4)],
   }) : super(key: key);
 
   static const routeName = '/';
@@ -49,7 +49,7 @@ class SampleItemListView extends StatelessWidget {
           final item = items[index];
 
           return ListTile(
-              title: Text('SampleItem ${item.id}'),
+              title: Text('Design ${item.id}'),
               leading: const CircleAvatar(
                 // Display the Flutter Logo image asset.
                 foregroundImage: AssetImage('assets/images/flutter_logo.png'),
