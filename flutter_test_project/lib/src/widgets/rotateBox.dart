@@ -32,8 +32,8 @@ class RotateBoxState extends State with SingleTickerProviderStateMixin {
           animation: _animationController,
           child: Container(
             color: Colors.blue,
-            height: 100,
-            width: 100,
+            // height: 100,
+            // width: 100,
           ),
           builder: (context, child) => Transform.rotate(angle: _animationController.value * pi, child: child))
     ]);

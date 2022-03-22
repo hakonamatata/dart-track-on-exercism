@@ -6,6 +6,9 @@ class MovingBox extends StatefulWidget {
 
   static const routeName = '/example/4';
 
+  // TODO: animate on click
+  // TODO: chain different animation together
+
   @override
   MovingBoxState createState() => MovingBoxState();
 }
@@ -29,14 +32,20 @@ class MovingBoxState extends State with SingleTickerProviderStateMixin {
   }
 
   @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Stack(children: [
       AnimatedBuilder(
           animation: _animation,
           child: Container(
             color: Colors.blue,
-            height: 100,
-            width: 100,
+            // height: 100,
+            // width: 100,
           ),
           builder: (context, child) => Transform.translate(
                 offset: Offset(400 * position * _animation.value as double, 0),

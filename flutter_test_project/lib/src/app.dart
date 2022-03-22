@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
                   // case SampleItemDetailsView.routeName:
                   //  return const SampleItemDetailsView();
                   case '/example/1':
-                    return const DesignExample1();
+                    return DesignExample1();
                   case '/example/2':
                     return const DesignExample2();
                   case '/example/3':
