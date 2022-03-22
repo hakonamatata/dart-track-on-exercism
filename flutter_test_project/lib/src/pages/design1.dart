@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_test_project/src/widgets/movingBox.dart';
 import 'package:flutter_test_project/src/widgets/rotateBox.dart';
 
 class DesignExample1 extends StatelessWidget {
@@ -66,6 +67,15 @@ class DesignExample1 extends StatelessWidget {
               width: 100,
               height: 100,
               child: const RotateBox()),
+
+          Positioned(
+              top: 500,
+              // bottom: 100,
+              left: 100,
+              // right: 100,
+              width: 100,
+              height: 100,
+              child: const MovingBox()),
 
           // Transform(
           // transform: Matrix4.rotationX(0.3),
