@@ -1,0 +1,170 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "anagram",
+      "cwd": "anagram",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "armstrong-numbers",
+      "cwd": "armstrong-numbers",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "bob",
+      "cwd": "bob",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "difference-of-squares",
+      "cwd": "difference-of-squares",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_cubit_app",
+      "cwd": "flutter_cubit_app",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_cubit_app (profile mode)",
+      "cwd": "flutter_cubit_app",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_cubit_app (release mode)",
+      "cwd": "flutter_cubit_app",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_cupertino",
+      "cwd": "flutter_cupertino",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_cupertino (profile mode)",
+      "cwd": "flutter_cupertino",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_cupertino (release mode)",
+      "cwd": "flutter_cupertino",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "flutter_test_project",
+      "cwd": "flutter_test_project",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "flutter_test_project (profile mode)",
+      "cwd": "flutter_test_project",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "flutter_test_project (release mode)",
+      "cwd": "flutter_test_project",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "gigasecond",
+      "cwd": "gigasecond",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "hamming",
+      "cwd": "hamming",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "hello-world",
+      "cwd": "hello-world",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "isbn-verifier",
+      "cwd": "isbn-verifier",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "leap",
+      "cwd": "leap",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "pascals-triangle",
+      "cwd": "pascals-triangle",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "raindrops",
+      "cwd": "raindrops",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "rna-transcription",
+      "cwd": "rna-transcription",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "scrabble-score",
+      "cwd": "scrabble-score",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "space-age",
+      "cwd": "space-age",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "two-fer",
+      "cwd": "two-fer",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "word-count",
+      "cwd": "word-count",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "binary-search-tree",
+      "cwd": "armstrong-numbers\\binary-search-tree",
+      "request": "launch",
+      "type": "dart"
+    }
+  ]
+}
