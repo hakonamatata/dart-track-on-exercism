@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'models/node.dart';
+
 class BinarySearchTree2 {
   Node? root;
   var _sortedData = <num>[];
@@ -78,20 +80,6 @@ class BinarySearchTree2 {
     } else {
       y.right = Node(value);
     }
-  }
-}
-
-class Node {
-  num value;
-  Node? left;
-  Node? right;
-  Node? parent;
-
-  Node(this.value) {}
-
-  @override
-  String toString() {
-    return "value: $value, children: [$left, $right]";
   }
 }
 
